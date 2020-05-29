@@ -14,9 +14,9 @@ RUN apk add --update ca-certificates openssl
 USER 1000:0
 
 COPY --from=0 /go/dex/bin/dex /usr/bin/dex
-COPY --from=0 /go/dex/web /usr/lib/dex/web
+COPY --from=0 /go/dex/web /usr/share/dex/web
 
-WORKDIR /usr/lib/dex
+WORKDIR /usr/share/dex
 
 ENTRYPOINT ["dex"]
 
