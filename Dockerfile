@@ -7,7 +7,7 @@ RUN \
      git clone -b ${DEX_VERSION} https://github.com/dexidp/dex && \
      cd dex && make
 
-FROM alpine:3.11
+FROM alpine:3.12
 
 RUN apk add --update ca-certificates openssl
 
