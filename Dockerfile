@@ -1,6 +1,6 @@
-FROM golang:1.14-alpine
+FROM golang:1.15-alpine
 
-ENV DEX_VERSION v2.26.0
+ENV DEX_VERSION v2.27.0
 
 RUN \
      apk add --no-cache --update alpine-sdk && \
